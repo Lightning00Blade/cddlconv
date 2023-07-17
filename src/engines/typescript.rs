@@ -111,7 +111,7 @@ impl<'a, 'b: 'a, 'c> Engine {
     }
     fn enter_comment(&mut self) {
         if !self.in_comment {
-            print!("/*");
+            print!("\n/*");
             self.in_comment = true;
         } else {
             print!(" ");
