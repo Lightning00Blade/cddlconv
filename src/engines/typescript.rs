@@ -508,7 +508,7 @@ impl<'a, 'b: 'a> Visitor<'a, 'b, Error> for Engine {
                 false
             }
         }) {
-            print!("export const enum {} {{", type_name);
+            print!("export enum {} {{", type_name);
             self.visit_enum_type(&tr.value)?;
             println!("}}");
         } else {
